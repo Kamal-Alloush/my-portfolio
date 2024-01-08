@@ -1,5 +1,4 @@
-
-@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@200;300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@200;300;400;500;600;700&display=swap');
 
 :root {
   --color-body: #b6cbce;
@@ -9,7 +8,7 @@
   --color-brand: #e0f780;
   --color-brand-2: #deff58;
   --sidebar-width: 240px;
-  --font-base: "bai jamjuree";
+  --font-base: 'bai jamjuree';
 }
 
 body {
@@ -22,17 +21,16 @@ h1,
 h2,
 h3,
 h4,
-h5
- {
+h5 {
   color: var(--color-heading);
   font-weight: 700;
   text-transform: capitalize;
 }
 
-strong{
-    color: var(--color-brand);
-    font-weight: 700;
-    text-transform: capitalize;
+strong {
+  color: var(--color-brand);
+  font-weight: 700;
+  text-transform: capitalize;
 }
 
 a {
@@ -61,11 +59,11 @@ img {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   padding: 80px 0;
   border-bottom: 2px solid rgba(255, 255, 255, 0.1);
 }
@@ -81,22 +79,21 @@ img {
 }
 .shadow-effect:hover {
   -webkit-box-shadow: -6px 6px 0 0 var(--color-brand);
-          box-shadow: -6px 6px 0 0 var(--color-brand);
+  box-shadow: -6px 6px 0 0 var(--color-brand);
 }
 
 .iconbox {
-  
   width: 60px;
   height: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   font-size: 32px;
   color: var(--color-base-1);
   background-color: var(--color-brand);
@@ -110,7 +107,7 @@ img {
 
 .navbar .nav-link.active {
   color: var(--color-brand);
-  }
+}
 .navbar .nav-link:hover {
   color: var(--color-brand);
 }
@@ -123,7 +120,13 @@ img {
   .navbar {
     min-height: 100vh;
     width: var(--sidebar-width);
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(3, 63, 71, 0.9)), to(rgba(3, 65, 73, 0.9)));
+    background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(3, 63, 71, 0.9)),
+      to(rgba(3, 65, 73, 0.9))
+    );
     background: -o-linear-gradient(rgba(3, 63, 71, 0.9), rgba(3, 65, 73, 0.9));
     background: linear-gradient(rgba(3, 63, 71, 0.9), rgba(3, 65, 73, 0.9));
     background-size: cover;
@@ -137,7 +140,6 @@ img {
   #content-wrapper {
     padding-left: var(--sidebar-width);
   }
- 
 }
 
 .btn {
@@ -162,9 +164,8 @@ img {
   position: relative;
 }
 
-
 .link-custom::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 0%;
   height: 2px;
@@ -180,82 +181,73 @@ img {
   width: 100%;
 }
 
-
-.card-custom .card-custom-image{
+.card-custom .card-custom-image {
   overflow: hidden;
-
 }
 .card-custom .card-custom-image img {
   -webkit-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
-.card-custom:hover .card-custom-image img{
+.card-custom:hover .card-custom-image img {
   -webkit-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-          transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
-
-
-#contact .form-control{
+#contact .form-control {
   background-color: var(--color-base-1);
   border-color: var(--color-base-1);
-  color:var(--color-body);
+  color: var(--color-body);
 }
 
 #contact .form-control:focus {
   border-color: var(--color-brand);
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 #contact .form-control::-webkit-input-placeholder {
   color: var(--color-body);
-  
 }
 
 #contact .form-control::-moz-placeholder {
   color: var(--color-body);
-  
 }
 
 #contact .form-control:-ms-input-placeholder {
   color: var(--color-body);
-  
 }
 
 #contact .form-control::-ms-input-placeholder {
   color: var(--color-body);
-  
 }
 
 #contact .form-control::placeholder {
   color: var(--color-body);
-  
 }
 
-#contact input.form-control{
- height: 44px;
+#contact input.form-control {
+  height: 44px;
 }
 
-
-
-
-
-.social-icons a{
+.social-icons a {
   width: 40px;
   height: 40px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   background-color: var(--color-base-1);
   border-radius: 100px;
   font-size: 24px;
+}
+
+.keywords {
+ color: var(--color-brand);
 }
